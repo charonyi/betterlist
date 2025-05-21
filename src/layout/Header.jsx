@@ -1,9 +1,10 @@
-import Home from "../pages/Home/Home.jsx";
+import Link from 'next/link'
+import Navbar from './Navbar.tsx';
 
 function Header() {
   return (
     <>
-      <Home />
+     <Navbar/>
     </>
   );
 }

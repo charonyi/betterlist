@@ -1,5 +1,6 @@
 
 import axios from 'axios';
+import './index.css'
         // import { Cloudinary } from "@cloudinary/url-gen";
         // import { AdvancedImage } from "@cloudinary/react";
 
