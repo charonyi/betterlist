@@ -2,43 +2,43 @@ import React, { useState } from "react";
 import Home from "../Home/Home.jsx";
 
 function PostAdForm() {
-  const [product, setProduct] = useState({
-    name: "",
-    description: "",
-     price: 0,
-    image: null
-  });
+  // const [product, setProduct] = useState({
+  //   name: "",
+  //   description: "",
+  //    price: 0,
+  //   image: null
+  // });
 
-  const handleChange = (e) => {
-    setProduct({ ...product, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   //setProduct({ ...product, [e.target.name]: e.target.value });
+  // };
 
-  const handleImageChange = (e) => {
-    setProduct({ ...product, image: e.target.files[0] });
-  };
+  // const handleImageChange = (e) => {
+  //  // setProduct({ ...product, image: e.target.files[0] });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    const formData = new FormData();
-    for (const key in product) {
-      formData.append(key, product[key]);
-    }
-    try {
-      const response = await fetch("/api/upload", {
-        method: "POST",
-        body: formData,
-      });
+  //   const formData = new FormData();
+  //   for (const key in product) {
+  //     formData.append(key, product[key]);
+  //   }
+  //   try {
+  //     const response = await fetch("/api/upload", {
+  //       method: "POST",
+  //       body: formData,
+  //     });
 
-      if (response.ok) {
-        console.log("Product uploaded successfully");
-      } else {
-        console.error("Error uploading product");
-      }
-    } catch (error) {
-      console.error("Network error:", error);
-    }
-  };
+  //     if (response.ok) {
+  //       console.log("Product uploaded successfully");
+  //     } else {
+  //       console.error("Error uploading product");
+  //     }
+  //   } catch (error) {
+  //     console.error("Network error:", error);
+  //   }
+  // };
 
   return (
 

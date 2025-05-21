@@ -61,7 +61,9 @@ export default function Navbar() {
 
 
           <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-
+            <li class="nav-item">
+              <a href="/wallet" class="nav-link">Wallet</a>
+            </li>
             <li class="nav-item">
               <a href="/profile" class="nav-link">_Profile</a>
             </li>
